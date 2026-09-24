@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man: Across the Spider-Verse</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/png" href="../spider-verse/img/pngwing.com.png">
+</head>
+
+<body>
+
+    <header class="menu-barra">
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="check-toggle">
+            <label for="menu-toggle" class="btn-hamburguesa">☰</label>
+
+            <div class="enlaces-menu">
+                <a href="index.html">Inicio</a>
+                <a href="#personajes">Personajes</a>
+                <a href="#universos">Universos</a>
+                <a href="vision-mision.html" target="_blank">Visión y Misión</a>
+                <a href="comunidad.html" target="_blank">Comunidad</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="seccion-comentarios.html" target="_blank">Comentario</a>
+                <a href="#modal-auth" class="btn-abrir-modal">Acceso</a>
+            </div>
+
+            <div class="contenedor-busqueda">
+                <input type="text" placeholder="Buscar..." class="input-estetico">
+            </div>
+        </nav>
+    </header>
+
+    <main id="pagina">
+
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <div class="badge-creador"> PAGINA HECHA POR <strong>SEBASTIÁN MORENO</strong></div>
+                <h2>SPIDER-MAN<br>ATRAVES DEL<br>SPIDER-VERSO</h2>
+                <p class="subtitulo-hero"></p>
+                <div class="botones-hero">
+                    <button onclick="irPersonajes()">VER PERSONAJES</button>
+                    <a href="vision-mision.html" class="btn-creditos" target="_blank">SOBRE EL PROYECTO</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personajes">
+            <h2>PERSONAJES PRINCIPALES</h2>
+            <div class="personaje" id="personaje">
+                <div class="personaje-imagen">
+                    <img id="imagen-personaje" src="../spider-verse/img/miles.png" alt="Miles Morales">
+                </div>
+                <div class="personaje-info">
+                    <p id="tipo-personaje">SPIDER-MAN</p>
+                    <h3 id="nombre-personaje">MILES MORALES</h3>
+                    <p id="descripcion-personaje">Miles Morales es uno de los Spider-Man más importantes del Spider-Verse. Un joven de Brooklyn que descubre que existen múltiples versiones de Spider-Man.</p>
+                    <div class="botones-personaje">
+                        <button id="siguiente">SIGUIENTE</button>
+                        <a id="enlace-universo" href="universos/tierra-1610.html" class="btn-universo">VER UNIVERSO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="universos">
+            <h2>SPIDER-VERSE</h2>
+            <p class="descripcion">El Spider-Verse es un conjunto de universos donde existen diferentes versiones de Spider-Man, cada una con su propia historia, estilo y habilidades.</p>
+            <p class="resumen">Después de los acontecimientos de la primera película, Miles Morales vuelve a encontrarse con Gwen Stacy y descubre que existen muchos más Spider-Man de diferentes universos. Al viajar por el multiverso, Miles se enfrenta a nuevos enemigos y a un conflicto que podría poner en peligro la existencia de todos los universos.</p>
+        </section>
+
+        <div id="modal-auth" class="overlay-modal">
+            <div class="contenedor-auth">
+                <a href="#pagina" class="btn-cerrar">&times;</a>
+                <input type="radio" name="tab-auth-modal" id="tab-login-m" checked class="radio-tab">
+                <input type="radio" name="tab-auth-modal" id="tab-registro-m" class="radio-tab">
+
+                <div class="pestanas-auth">
+                    <label for="tab-login-m" class="tab-label btn-login">Iniciar Sesión</label>
+                    <label for="tab-registro-m" class="tab-label btn-registro">Registrarse</label>
+                </div>
+
+                <form action="#" method="POST" class="form-auth form-login">
+                    <h2>BIENVENIDO DE NUEVO</h2>
+                    <div class="campo">
+                        <label for="login-email-m">Correo Electrónico</label>
+                        <input type="email" id="login-email-m" placeholder="usuario@spiderverse.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="login-password-m">Contraseña</label>
+                        <input type="password" id="login-password-m" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn-auth">Ingresar</button>
+                </form>
+
+                <form action="#" method="POST" class="form-auth form-registro">
+                    <h2>CREAR CUENTA</h2>
+                    <div class="campo">
+                        <label for="reg-nombre-m">Nombre de Usuario</label>
+                        <input type="text" id="reg-nombre-m" placeholder="Ej. Miles Morales" required>
+                    </div>
+                    <div class="campo">
+                        <label for="reg-email-m">Correo Electrónico</label>
+                        <input type="email" id="reg-email-m" placeholder="usuario@spiderverse.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="reg-password-m">Contraseña</label>
+                        <input type="password" id="reg-password-m" placeholder="••••••••" required minlength="6">
+                    </div>
+                    <button type="submit" class="btn-auth">Registrarse</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="pie-pagina-exito">
+        <div class="banner-politica-spider">
+            <p>Actualizamos nuestros protocolos de la Spider-Society. Conoce ahora la nueva <a href="#">Política de tratamiento de datos multiversales y Aviso de privacidad.</a></p>
+        </div>
+
+        <div class="barra-beneficios-spider">
+            <div class="item-beneficio"><span class="icono-b"></span><p>Spider-Society Verificada</p></div>
+            <div class="item-beneficio"><span class="icono-b"></span><p>+13 Universos Mapeados</p></div>
+            <div class="item-beneficio"><span class="icono-b"></span><p>Conexión Segura Alchemax</p></div>
+            <div class="item-beneficio"><span class="icono-b"></span><p>Saltos Interdimensionales</p></div>
+            <div class="item-beneficio"><span class="icono-b"></span><p>Red de Vigilancia Arácnida</p></div>
+        </div>
+
+        <div class="bloque-interactivo-footer">
+            <div class="col-interactiva">
+                <p class="titulo-interactivo">Únete a la Red:</p>
+                <p class="sub-interactivo">Regístrate para recibir alertas de eventos canónicos.</p>
+                <a href="#modal-auth" class="btn-footer-accion">Unirme</a>
+            </div>
+            <div class="col-interactiva">
+                <p class="titulo-interactivo">Gizmo Multiversal</p>
+                <div class="box-app">
+                    <span class="qr-simulado">📱</span>
+                    <span class="texto-app">App <strong>Web-Net</strong></span>
+                </div>
+            </div>
+            <div class="col-interactiva">
+                <p class="titulo-interactivo">Síguenos en:</p>
+                <div class="redes-spider">
+                    <a href="#" title="Discord">💬</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="X">🐦</a>
+                    <a href="#" title="YouTube">▶️</a>
+                </div>
+            </div>
+            <div class="col-interactiva">
+                <p class="titulo-interactivo">Tecnología respaldada por:</p>
+                <div class="sponsors-spider">
+                    <span class="marca-sponsor">ALCHEMAX</span>
+                    <span class="marca-sponsor">OSCORP</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="columnas-navegacion-footer">
+            <div class="col-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#personajes">Personajes</a></li>
+                    <li><a href="#universos">Universos</a></li>
+                    <li><a href="debates.html">Debates</a></li>
+                </ul>
+            </div>
+            <div class="col-links">
+                <h4>Comunidad</h4>
+                <ul>
+                    <li><a href="comunidad.html" target="_blank">Comunidad Spider</a></li>
+                    <li><a href="seccion-comentarios.html" target="_blank">Centro de Comentarios</a></li>
+                    <li><a href="vision-mision.html" target="_blank">Visión y Misión</a></li>
+                </ul>
+            </div>
+            <div class="col-links">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="https://spiderman.fandom.com/wiki/Spider-Man_Wiki" target="_blank">Spider-Wiki Oficial</a></li>
+                    <li><a href="#">Reportar Glitch</a></li>
+                    <li><a href="#">Mapa de la Red Arácnida</a></li>
+                </ul>
+            </div>
+            <div class="col-links">
+                <h4>Información Legal</h4>
+                <ul>
+                    <li><a href="#">Términos del Multiverso</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Licencia de la Spider-Society</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pie-cookies-copyright">
+            <p class="texto-cookies"><strong>Manejo de Anomalias (Cookies):</strong> Al navegar en este sitio, aceptas el rastreo de eventos canónicos y personalización de contenido multiversal.</p>
+            <p class="copyright-texto">&copy; 2026 MARVEL. Spider-Man y todos los personajes relacionados son propiedad de Marvel Characters, Inc. Este sitio web es un proyecto académico sin fines de lucro desarrollado por Sebastián Moreno.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

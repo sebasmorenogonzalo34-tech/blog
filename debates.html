@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Debates | Spider-Man: Across the Spider-Verse</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/png" href="../spider-verse/img/pngwing.com.png">
+</head>
+
+<body class="pagina-debates">
+
+    <header class="menu-barra">
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="check-toggle">
+
+            <label for="menu-toggle" class="btn-hamburguesa">☰</label>
+
+            <div class="enlaces-menu">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#personajes">Personajes</a>
+                <a href="index.html#universos">Universos</a>
+                <a href="vision-mision.html" target="_blank">Visión y Misión</a>
+                <a href="comunidad.html" target="_blank">Comunidad</a>
+                <a href="https://spiderman.fandom.com/wiki/Spider-Man_Wiki" target="_blank">Wiki</a>
+                <a href="debates.html">Debates</a>
+                <a href="index.html#modal-auth" class="btn-abrir-modal">Acceso</a>
+            </div>
+
+            <div class="contenedor-busqueda">
+                <input type="text" placeholder="Buscar..." class="input-estetico">
+            </div>
+        </nav>
+    </header>
+
+    <main id="pagina">
+
+        <section class="debates-hero">
+            <h2>DEBATES</h2>
+            <p>
+                Comparte tu teoría, defiende a tu Spider-Man favorito o discute
+                sobre el multiverso con el resto de la comunidad.
+            </p>
+        </section>
+
+        <!-- Barra para "crear" un debate. Es solo visual, no envía ni guarda nada -->
+        <form class="barra-nuevo-debate" onsubmit="return false;">
+            <input type="text" placeholder="¿De qué quieres debatir hoy?">
+            <button type="submit">PUBLICAR</button>
+        </form>
+
+        <section class="lista-debates">
+
+            <article class="tarjeta-debate">
+                <span class="etiqueta-debate">TEORÍAS</span>
+                <h3>¿Miguel O'Hara tenía razón sobre las variantes canon?</h3>
+                <p>
+                    Después de ver cómo terminó todo con Miles, ¿de verdad
+                    romper el canon pone en riesgo el multiverso o era solo
+                    una excusa para controlar a la Sociedad Araña?
+                </p>
+                <div class="meta-debate">
+                    <span>Iniciado por Ana_616</span>
+                    <span>24 respuestas</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-debate">
+                <span class="etiqueta-debate">PERSONAJES</span>
+                <h3>El mejor Spider-Man del multiverso</h3>
+                <p>
+                    Miles, Gwen, Hobie, Pavitr... ¿cuál se queda con el título
+                    de mejor versión y por qué?
+                </p>
+                <div class="meta-debate">
+                    <span>Iniciado por WebHead_99</span>
+                    <span>41 respuestas</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-debate">
+                <span class="etiqueta-debate">ANIMACIÓN</span>
+                <h3>El estilo visual de cada universo</h3>
+                <p>
+                    Cada dimensión tiene su propia técnica de animación. ¿Cuál
+                    creen que fue la más arriesgada y por qué funcionó tan bien?
+                </p>
+                <div class="meta-debate">
+                    <span>Iniciado por Pinta_Mumbattan</span>
+                    <span>17 respuestas</span>
+                </div>
+            </article>
+
+            <article class="tarjeta-debate">
+                <span class="etiqueta-debate">FUTURO</span>
+                <h3>¿Qué esperan de la próxima película?</h3>
+                <p>
+                    Con el conflicto entre Miles y la Sociedad Araña sin
+                    resolver, ¿hacia dónde debería ir la historia?
+                </p>
+                <div class="meta-debate">
+                    <span>Iniciado por SpotFan2099</span>
+                    <span>63 respuestas</span>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 MARVEL. Spider-Man y todos los personajes relacionados son propiedad de Marvel Characters, Inc.
+            Este sitio web es un proyecto académico sin fines de lucro.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
